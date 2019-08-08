@@ -8,7 +8,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Website</th>
+                <th>Websites</th>
             </tr>
             <tr v-for="each in users" :key="each.id">
                 <td><RouterLink :to="'./user/' + each.id">{{ each.name }}</RouterLink></td>
