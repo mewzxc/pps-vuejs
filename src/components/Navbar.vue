@@ -10,6 +10,14 @@
             <RouterLink to="/user">User</RouterLink>
             {{ '   |   ' }}
             <RouterLink to="/form">PersonFrom</RouterLink>
+            {{ '   |   ' }}
+            <RouterLink to="/nested">Nested</RouterLink>
+            {{ '   |   ' }}
+            <RouterLink to="/Vuex">Vuex</RouterLink>
+            {{ '      ' }}
+            User: {{ $store.getters.userCount}}
+            {{ '   |   ' }}
+            <RouterLink to="/Chart">Chart</RouterLink>
 
     </div>
 </template>

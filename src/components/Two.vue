@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <h2 class="title">Two</h2>
+  <div class="box">
+    <h2 class="title">Two: {{ foo }}</h2>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    foo: {
+      required: true,
+    }
+  }
+}
 </script>

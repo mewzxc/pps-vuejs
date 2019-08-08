@@ -13,6 +13,9 @@ const Three = () => import('@/components/Three' /* webpackChunkName: 'Three' */)
 const User = () => import('@/page/user' /* webpackChunkName: 'User' */)
 const UserProfile = () => import('@/page/userProfile' /* webpackChunkName: 'userProfile' */)
 const PersonForm = () => import('@/page/PersonForm' /* webpackChunkName: 'PersonForm' */)
+const Nested = () => import('@/page/Nested' /* webpackChunkName: 'Nested' */)
+const Vuex = () => import('@/page/Vuex' /* webpackChunkName: 'Vuex' */)
+const chart = () => import('@/page/chart' /* webpackChunkName: 'chart' */)
 
 Vue.use(VueRouter)
 
@@ -22,7 +25,10 @@ const routes = [
     { path: '/contact', component: Three},
     { path: '/user', component: User},
     { path: '/user/:id', component: UserProfile},
-    { path: '/form', component: PersonForm}
+    { path: '/form', component: PersonForm},
+    { path: '/nested', component: Nested},
+    { path: '/Vuex', component: Vuex},
+    { path: '/Chart', component: chart}
 ]
 
 const router = new VueRouter({

@@ -1,9 +1,16 @@
 <template>
-  <div>
-    <h2 class="title">One</h2>
+  <div class="box">
+    <h2 class="title">One: {{ doubleCounter }}</h2>
+    <Two :foo="doubleCounter" />
   </div>
 </template>
 
 <script>
-export default {}
+import Two from '@/components/Two'
+export default {
+  components: {
+    Two
+  },
+  props: ['doubleCounter']
+}
 </script>
